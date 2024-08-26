@@ -1,0 +1,32 @@
+.carbg{
+    background: url('../src/assets/carbg.jpg');
+    background-size: cover;
+    height: 580px;
+    width:441px;
+    position: relative;
+}
+
+.car{
+    height: 440px;
+    width:238px;
+    position: absolute;
+    top:110px;
+    left:144px;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    text-align: center;
+    flex-direction: row;
+    
+}
+
+.login-card{
+    width:20rem;
+    /* height:25rem; */
+    padding: 1rem;
+    
+}
