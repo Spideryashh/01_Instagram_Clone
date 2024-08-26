@@ -40,7 +40,7 @@ const ChatPage = () => {
 
     return (
         <div className='flex ml-[16%] h-screen'>
-            <section className='w-full md:w-1/4 my-8'>
+            { !selectedUser && <section className='w-full md:w-1/4 my-8'>
                 <h1 className='font-bold mb-4 px-3 text-xl'>{user?.username}</h1>
                 <hr className='mb-4 border-gray-300' />
                 <div className='overflow-y-auto h-[80vh]'>
@@ -63,11 +63,12 @@ const ChatPage = () => {
                     }
                 </div>
 
-            </section>
+            </section>}
             {
                 selectedUser ? (
                     <section className='flex-1 border-l border-l-gray-300 flex flex-col h-full '>
                         <div className='flex gap-3 items-center px-3 py-2 border-b border-gray-300 sticky top-0 bg-white z-10 '>
+                            <Button onClick={() => dispatch(setSelectedUser(null))}>Back</Button>
                             <Avatar>
                                 <AvatarImage src={selectedUser?.profilePicture} alt='profile' />
                                 <AvatarFallback>CN</AvatarFallback>

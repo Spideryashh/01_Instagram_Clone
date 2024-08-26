@@ -79,7 +79,7 @@ const LeftSidebar = () => {
 ]
 
   return (
-    <div className="fixed top-4 z-10 left-0 px-2 border-gray-300 w-[12%] h-screen max-md:px-1   ">
+    <div className="fixed top-4 right-2 z-10 left-0 px-2 border-gray-300 w-[12%] h-screen max-md:px-1   ">
       <div className="flex flex-col ">
       <h1 className='my-4 pl-1'>
       <img src={mitrabannerlogo} alt="MM" />
