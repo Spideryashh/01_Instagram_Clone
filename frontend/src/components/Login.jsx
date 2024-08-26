@@ -6,7 +6,7 @@ import { toast } from "sonner";
 import { Link, useNavigate } from "react-router-dom";
 import { Loader2 } from "lucide-react";
 import mitrabanner from '../assets/mitraMandal_banner.png'
-import '../app.css'
+import '../App.css'
 import { useDispatch, useSelector } from "react-redux";
 import { setAuthUser } from "@/redux/authSlice";
 
